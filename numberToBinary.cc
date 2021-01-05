@@ -4,7 +4,6 @@
 using namespace std;
 
 void numberToBinary(int n, vector<int> &binary){
-	int array[10] = {};
 	if(n == 0){
 		binary.push_back(0);
 	}else if(n == 1){
@@ -16,9 +15,6 @@ void numberToBinary(int n, vector<int> &binary){
 			n = n/2;
 		}
 	}
-	for(int i=binary.size()-1 ;i>=0 ;i--){    
-		cout<<binary[i];    
-	}	
 }
 
 int main(){
